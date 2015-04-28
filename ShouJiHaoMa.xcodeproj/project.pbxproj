@@ -12,6 +12,15 @@
 		75D862FA1AF02D64007ED169 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75D862F91AF02D64007ED169 /* Images.xcassets */; };
 		75D862FD1AF02D64007ED169 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75D862FB1AF02D64007ED169 /* LaunchScreen.xib */; };
 		75D863091AF02D64007ED169 /* ShouJiHaoMaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D863081AF02D64007ED169 /* ShouJiHaoMaTests.swift */; };
+		75D8636C1AF02ECD007ED169 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D8636B1AF02ECD007ED169 /* RootViewController.swift */; };
+		75D8636D1AF02F44007ED169 /* CHTTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D863661AF02E35007ED169 /* CHTTools.framework */; };
+		75D8636E1AF02F44007ED169 /* CHTTools.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75D863661AF02E35007ED169 /* CHTTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75D863721AF02F49007ED169 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D863501AF02E25007ED169 /* SnapKit.framework */; };
+		75D863731AF02F49007ED169 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75D863501AF02E25007ED169 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75D863A31AF03557007ED169 /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D8639C1AF034F9007ED169 /* SwiftHTTP.framework */; };
+		75D863A41AF03557007ED169 /* SwiftHTTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75D8639C1AF034F9007ED169 /* SwiftHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75D863C51AF0372D007ED169 /* JSONJoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D863BE1AF03720007ED169 /* JSONJoy.framework */; };
+		75D863C61AF0372D007ED169 /* JSONJoy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75D863BE1AF03720007ED169 /* JSONJoy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,7 +31,150 @@
 			remoteGlobalIDString = 75D862EE1AF02D64007ED169;
 			remoteInfo = ShouJiHaoMa;
 		};
+		75D8634F1AF02E25007ED169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D863481AF02E24007ED169 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = "SnapKit iOS";
+		};
+		75D863511AF02E25007ED169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D863481AF02E24007ED169 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECDB37A1AC0C9D4006BBC11;
+			remoteInfo = "SnapKit OSX";
+		};
+		75D863531AF02E25007ED169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D863481AF02E24007ED169 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = "SnapKit iOS Tests";
+		};
+		75D863551AF02E25007ED169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D863481AF02E24007ED169 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECDB3841AC0C9D4006BBC11;
+			remoteInfo = "SnapKit OSX Tests";
+		};
+		75D863651AF02E35007ED169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D863601AF02E35007ED169 /* CHTTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75D8631C1AF02DD9007ED169;
+			remoteInfo = CHTTools;
+		};
+		75D863671AF02E35007ED169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D863601AF02E35007ED169 /* CHTTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75D863271AF02DD9007ED169;
+			remoteInfo = CHTToolsTests;
+		};
+		75D8636F1AF02F44007ED169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D863601AF02E35007ED169 /* CHTTools.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 75D8631B1AF02DD9007ED169;
+			remoteInfo = CHTTools;
+		};
+		75D863741AF02F49007ED169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D863481AF02E24007ED169 /* SnapKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = "SnapKit iOS";
+		};
+		75D8639B1AF034F9007ED169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D863941AF034F9007ED169 /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6BFD901619C8D8B500DD99B6;
+			remoteInfo = SwiftHTTP;
+		};
+		75D8639D1AF034F9007ED169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D863941AF034F9007ED169 /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6BFD902119C8D8B500DD99B6;
+			remoteInfo = SwiftHTTPTests;
+		};
+		75D8639F1AF034F9007ED169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D863941AF034F9007ED169 /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D958025919E6EEEB003C8218;
+			remoteInfo = SwiftHTTPOSX;
+		};
+		75D863A11AF034F9007ED169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D863941AF034F9007ED169 /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D958026319E6EEEB003C8218;
+			remoteInfo = SwiftHTTPOSXTests;
+		};
+		75D863A51AF03557007ED169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D863941AF034F9007ED169 /* SwiftHTTP.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BFD901519C8D8B500DD99B6;
+			remoteInfo = SwiftHTTP;
+		};
+		75D863BD1AF03720007ED169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D863B61AF03720007ED169 /* JSONJoy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6B3E79B719D355CF006071F7;
+			remoteInfo = JSONJoy;
+		};
+		75D863BF1AF03720007ED169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D863B61AF03720007ED169 /* JSONJoy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6B3E79C219D355CF006071F7;
+			remoteInfo = JSONJoyTests;
+		};
+		75D863C11AF03720007ED169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D863B61AF03720007ED169 /* JSONJoy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D958022E19E6ED8E003C8218;
+			remoteInfo = JSONJoyOSX;
+		};
+		75D863C31AF03720007ED169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D863B61AF03720007ED169 /* JSONJoy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D958023819E6ED8E003C8218;
+			remoteInfo = JSONJoyOSXTests;
+		};
+		75D863C71AF0372D007ED169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D863B61AF03720007ED169 /* JSONJoy.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B3E79B619D355CF006071F7;
+			remoteInfo = JSONJoy;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		75D863711AF02F45007ED169 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				75D863A41AF03557007ED169 /* SwiftHTTP.framework in Embed Frameworks */,
+				75D863C61AF0372D007ED169 /* JSONJoy.framework in Embed Frameworks */,
+				75D8636E1AF02F44007ED169 /* CHTTools.framework in Embed Frameworks */,
+				75D863731AF02F49007ED169 /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		75D862EF1AF02D64007ED169 /* ShouJiHaoMa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShouJiHaoMa.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +186,11 @@
 		75D863021AF02D64007ED169 /* ShouJiHaoMaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShouJiHaoMaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D863071AF02D64007ED169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75D863081AF02D64007ED169 /* ShouJiHaoMaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouJiHaoMaTests.swift; sourceTree = "<group>"; };
+		75D863481AF02E24007ED169 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = ../SnapKit/SnapKit.xcodeproj; sourceTree = "<group>"; };
+		75D863601AF02E35007ED169 /* CHTTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CHTTools.xcodeproj; path = /Users/JianJun/Projects/GitHub/SnapKit/../CHTTools/CHTTools.xcodeproj; sourceTree = "<absolute>"; };
+		75D8636B1AF02ECD007ED169 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		75D863941AF034F9007ED169 /* SwiftHTTP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftHTTP.xcodeproj; path = /Users/JianJun/Projects/GitHub/SnapKit/../SwiftHTTP/SwiftHTTP.xcodeproj; sourceTree = "<absolute>"; };
+		75D863B61AF03720007ED169 /* JSONJoy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONJoy.xcodeproj; path = "../JSONJoy-Swift/JSONJoy.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +198,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D863A31AF03557007ED169 /* SwiftHTTP.framework in Frameworks */,
+				75D863C51AF0372D007ED169 /* JSONJoy.framework in Frameworks */,
+				75D8636D1AF02F44007ED169 /* CHTTools.framework in Frameworks */,
+				75D863721AF02F49007ED169 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +221,7 @@
 				75D862F11AF02D64007ED169 /* ShouJiHaoMa */,
 				75D863051AF02D64007ED169 /* ShouJiHaoMaTests */,
 				75D862F01AF02D64007ED169 /* Products */,
+				75D863381AF02E05007ED169 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				75D862F41AF02D64007ED169 /* AppDelegate.swift */,
+				75D8636B1AF02ECD007ED169 /* RootViewController.swift */,
 				75D862F91AF02D64007ED169 /* Images.xcassets */,
 				75D862FB1AF02D64007ED169 /* LaunchScreen.xib */,
 				75D862F61AF02D64007ED169 /* ShouJiHaoMa.xcdatamodeld */,
@@ -109,6 +272,59 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		75D863381AF02E05007ED169 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75D863601AF02E35007ED169 /* CHTTools.xcodeproj */,
+				75D863941AF034F9007ED169 /* SwiftHTTP.xcodeproj */,
+				75D863B61AF03720007ED169 /* JSONJoy.xcodeproj */,
+				75D863481AF02E24007ED169 /* SnapKit.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75D863491AF02E24007ED169 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75D863501AF02E25007ED169 /* SnapKit.framework */,
+				75D863521AF02E25007ED169 /* SnapKit.framework */,
+				75D863541AF02E25007ED169 /* SnapKit iOS Tests.xctest */,
+				75D863561AF02E25007ED169 /* SnapKit OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75D863611AF02E35007ED169 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75D863661AF02E35007ED169 /* CHTTools.framework */,
+				75D863681AF02E35007ED169 /* CHTToolsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75D863951AF034F9007ED169 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75D8639C1AF034F9007ED169 /* SwiftHTTP.framework */,
+				75D8639E1AF034F9007ED169 /* SwiftHTTPTests.xctest */,
+				75D863A01AF034F9007ED169 /* SwiftHTTP.framework */,
+				75D863A21AF034F9007ED169 /* SwiftHTTPOSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75D863B71AF03720007ED169 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75D863BE1AF03720007ED169 /* JSONJoy.framework */,
+				75D863C01AF03720007ED169 /* JSONJoyTests.xctest */,
+				75D863C21AF03720007ED169 /* JSONJoy.framework */,
+				75D863C41AF03720007ED169 /* JSONJoyOSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,10 +335,15 @@
 				75D862EB1AF02D64007ED169 /* Sources */,
 				75D862EC1AF02D64007ED169 /* Frameworks */,
 				75D862ED1AF02D64007ED169 /* Resources */,
+				75D863711AF02F45007ED169 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				75D863701AF02F44007ED169 /* PBXTargetDependency */,
+				75D863751AF02F49007ED169 /* PBXTargetDependency */,
+				75D863A61AF03557007ED169 /* PBXTargetDependency */,
+				75D863C81AF0372D007ED169 /* PBXTargetDependency */,
 			);
 			name = ShouJiHaoMa;
 			productName = ShouJiHaoMa;
@@ -176,6 +397,24 @@
 			mainGroup = 75D862E61AF02D64007ED169;
 			productRefGroup = 75D862F01AF02D64007ED169 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 75D863611AF02E35007ED169 /* Products */;
+					ProjectRef = 75D863601AF02E35007ED169 /* CHTTools.xcodeproj */;
+				},
+				{
+					ProductGroup = 75D863B71AF03720007ED169 /* Products */;
+					ProjectRef = 75D863B61AF03720007ED169 /* JSONJoy.xcodeproj */;
+				},
+				{
+					ProductGroup = 75D863491AF02E24007ED169 /* Products */;
+					ProjectRef = 75D863481AF02E24007ED169 /* SnapKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 75D863951AF034F9007ED169 /* Products */;
+					ProjectRef = 75D863941AF034F9007ED169 /* SwiftHTTP.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				75D862EE1AF02D64007ED169 /* ShouJiHaoMa */,
@@ -183,6 +422,107 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		75D863501AF02E25007ED169 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 75D8634F1AF02E25007ED169 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75D863521AF02E25007ED169 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 75D863511AF02E25007ED169 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75D863541AF02E25007ED169 /* SnapKit iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit iOS Tests.xctest";
+			remoteRef = 75D863531AF02E25007ED169 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75D863561AF02E25007ED169 /* SnapKit OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit OSX Tests.xctest";
+			remoteRef = 75D863551AF02E25007ED169 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75D863661AF02E35007ED169 /* CHTTools.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CHTTools.framework;
+			remoteRef = 75D863651AF02E35007ED169 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75D863681AF02E35007ED169 /* CHTToolsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CHTToolsTests.xctest;
+			remoteRef = 75D863671AF02E35007ED169 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75D8639C1AF034F9007ED169 /* SwiftHTTP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftHTTP.framework;
+			remoteRef = 75D8639B1AF034F9007ED169 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75D8639E1AF034F9007ED169 /* SwiftHTTPTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftHTTPTests.xctest;
+			remoteRef = 75D8639D1AF034F9007ED169 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75D863A01AF034F9007ED169 /* SwiftHTTP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftHTTP.framework;
+			remoteRef = 75D8639F1AF034F9007ED169 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75D863A21AF034F9007ED169 /* SwiftHTTPOSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftHTTPOSXTests.xctest;
+			remoteRef = 75D863A11AF034F9007ED169 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75D863BE1AF03720007ED169 /* JSONJoy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSONJoy.framework;
+			remoteRef = 75D863BD1AF03720007ED169 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75D863C01AF03720007ED169 /* JSONJoyTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = JSONJoyTests.xctest;
+			remoteRef = 75D863BF1AF03720007ED169 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75D863C21AF03720007ED169 /* JSONJoy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSONJoy.framework;
+			remoteRef = 75D863C11AF03720007ED169 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75D863C41AF03720007ED169 /* JSONJoyOSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = JSONJoyOSXTests.xctest;
+			remoteRef = 75D863C31AF03720007ED169 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		75D862ED1AF02D64007ED169 /* Resources */ = {
@@ -210,6 +550,7 @@
 			files = (
 				75D862F81AF02D64007ED169 /* ShouJiHaoMa.xcdatamodeld in Sources */,
 				75D862F51AF02D64007ED169 /* AppDelegate.swift in Sources */,
+				75D8636C1AF02ECD007ED169 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +569,26 @@
 			isa = PBXTargetDependency;
 			target = 75D862EE1AF02D64007ED169 /* ShouJiHaoMa */;
 			targetProxy = 75D863031AF02D64007ED169 /* PBXContainerItemProxy */;
+		};
+		75D863701AF02F44007ED169 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CHTTools;
+			targetProxy = 75D8636F1AF02F44007ED169 /* PBXContainerItemProxy */;
+		};
+		75D863751AF02F49007ED169 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SnapKit iOS";
+			targetProxy = 75D863741AF02F49007ED169 /* PBXContainerItemProxy */;
+		};
+		75D863A61AF03557007ED169 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftHTTP;
+			targetProxy = 75D863A51AF03557007ED169 /* PBXContainerItemProxy */;
+		};
+		75D863C81AF0372D007ED169 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSONJoy;
+			targetProxy = 75D863C71AF0372D007ED169 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -279,7 +640,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -318,7 +679,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,6 +692,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShouJiHaoMa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -341,6 +703,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShouJiHaoMa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
