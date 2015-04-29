@@ -44,16 +44,17 @@ class RootViewController: UIViewController {
             parameters: nil,
             success: { (response: HTTPResponse) -> Void in
 //                DLog("repsonse code:\(response.statusCode!), result:" + response.text!)
+                if response.statusCode != 200 {
+                    DLog("get numbers error code: \(response.statusCode)=\(NSHTTPURLResponse.localizedStringForStatusCode(response.statusCode!))")
+                    return
+                }
                 let responseStr = response.text!
-                var keyRange = responseStr.rangeOfString("jsonp_queryMoreNums", options: NSStringCompareOptions.CaseInsensitiveSearch)
-//                DLog("key range: \(keyRange)")
-//                var jsonLength = responseStr.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) - (keyRange?.endIndex-keyRange?.startIndex)
-//                var jsonRange = NSRangeMake(keyRange?.endIndex+1,)
-//                jsonRange.sta
-                var jsonStr = responseStr.substringWithRange(Range<String.Index>(start: advance(keyRange!.endIndex, 1), end: advance(responseStr.endIndex, -2)))
-                DLog("json str: \(jsonStr)")
-//                var jsonResult = JSONDecoder(jsonStr)
-//                DLog("json result:\(jsonResult)")
+                let jsonStart = responseStr.rangeOfString("jsonp_queryMoreNums(", options: NSStringCompareOptions.CaseInsensitiveSearch)
+                let jsonEnd = responseStr.rangeOfString(")", options: NSStringCompareOptions.CaseInsensitiveSearch | NSStringCompareOptions.BackwardsSearch)
+                let jsonStr = responseStr.substringWithRange(Range<String.Index>(start: jsonStart!.endIndex, end: jsonEnd!.startIndex))
+//                DLog("json str: \(jsonStr)")
+                var unionNumbers = UnionNumbers(JSONDecoder(jsonStr.dataUsingEncoding(NSUTF8StringEncoding)!))
+                DLog("number count:\(unionNumbers.moreNumArray?.count)")
             },
             failure: { (error: NSError, response: HTTPResponse?) -> Void in
                 DLog("repsonse code:\(response?.statusCode!), result:" + error.description)

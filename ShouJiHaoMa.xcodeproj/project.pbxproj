@@ -21,6 +21,7 @@
 		75D863A41AF03557007ED169 /* SwiftHTTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75D8639C1AF034F9007ED169 /* SwiftHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		75D863C51AF0372D007ED169 /* JSONJoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D863BE1AF03720007ED169 /* JSONJoy.framework */; };
 		75D863C61AF0372D007ED169 /* JSONJoy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75D863BE1AF03720007ED169 /* JSONJoy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75D863CA1AF04D80007ED169 /* unionStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D863C91AF04D80007ED169 /* unionStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +192,7 @@
 		75D8636B1AF02ECD007ED169 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		75D863941AF034F9007ED169 /* SwiftHTTP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftHTTP.xcodeproj; path = /Users/JianJun/Projects/GitHub/SnapKit/../SwiftHTTP/SwiftHTTP.xcodeproj; sourceTree = "<absolute>"; };
 		75D863B61AF03720007ED169 /* JSONJoy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONJoy.xcodeproj; path = "../JSONJoy-Swift/JSONJoy.xcodeproj"; sourceTree = "<group>"; };
+		75D863C91AF04D80007ED169 /* unionStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = unionStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 				75D862FB1AF02D64007ED169 /* LaunchScreen.xib */,
 				75D862F61AF02D64007ED169 /* ShouJiHaoMa.xcdatamodeld */,
 				75D862F21AF02D64007ED169 /* Supporting Files */,
+				75D863C91AF04D80007ED169 /* unionStruct.swift */,
 			);
 			path = ShouJiHaoMa;
 			sourceTree = "<group>";
@@ -550,6 +553,7 @@
 			files = (
 				75D862F81AF02D64007ED169 /* ShouJiHaoMa.xcdatamodeld in Sources */,
 				75D862F51AF02D64007ED169 /* AppDelegate.swift in Sources */,
+				75D863CA1AF04D80007ED169 /* unionStruct.swift in Sources */,
 				75D8636C1AF02ECD007ED169 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
